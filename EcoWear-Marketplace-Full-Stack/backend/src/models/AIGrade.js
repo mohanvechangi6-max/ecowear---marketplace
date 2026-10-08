@@ -1,0 +1,2 @@
+import mongoose from "mongoose";
+const schema=new mongoose.Schema({listing:{type:mongoose.Schema.Types.ObjectId,ref:"Listing"},conditionScore:Number,authenticityScore:Number,conditionLabel:String,authenticityLabel:String,confidence:Number,notes:String},{timestamps:true}); export default mongoose.model("AIGrade",schema);

@@ -1,0 +1,2 @@
+import mongoose from "mongoose";
+const schema=new mongoose.Schema({user:{type:mongoose.Schema.Types.ObjectId,ref:"User"},listing:{type:mongoose.Schema.Types.ObjectId,ref:"Listing"},order:{type:mongoose.Schema.Types.ObjectId,ref:"Order"},waterSaved:Number,co2Saved:Number,score:Number},{timestamps:true}); export default mongoose.model("Impact",schema);
